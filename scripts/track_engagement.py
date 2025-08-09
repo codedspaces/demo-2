@@ -248,7 +248,13 @@ class GitHubAnalytics:
             ('qdrant', 'qdrant'),
             ('weaviate', 'weaviate'),
             ('microsoft', 'autogen'),
-            ('joaomdmoura', 'crewAI')
+            ('joaomdmoura', 'crewAI'),
+            ('mendableai', 'firecrawl'),
+            ('scrapy', 'scrapy'),
+            ('microsoft', 'playwright'),
+            ('SeleniumHQ', 'selenium'),
+            ('apify', 'apify-sdk-python'),
+            ('codelucas', 'newspaper')
         ]
         
         tool_stats = {}

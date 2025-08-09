@@ -18,6 +18,7 @@ A curated, practical resource for AI engineers building with Large Language Mode
   - [RAG (Retrieval-Augmented Generation)](#rag-retrieval-augmented-generation)
   - [Evaluation & Testing](#evaluation--testing)
   - [Model Management](#model-management)
+  - [Data Collection & Web Scraping](#data-collection--web-scraping)
 - [🤖 Agent Frameworks](#-agent-frameworks)
 - [📦 LLM App Templates](#-llm-app-templates)
 - [🚀 Infrastructure & Deployment](#-infrastructure--deployment)
@@ -73,10 +74,22 @@ A curated, practical resource for AI engineers building with Large Language Mode
 
 | Tool | Description | Language | License | Stars |
 |------|-------------|----------|---------|-------|
-| [Hugging Face Hub](https://github.com/huggingface/huggingface_hub) | Client library for Hugging Face Hub | Python | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/huggingface/huggingface_hub.svg) |
-| [MLflow](https://github.com/mlflow/mlflow) | Platform for ML lifecycle management | Python | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/mlflow/mlflow.svg) |
-| [Weights & Biases](https://github.com/wandb/wandb) | Developer tools for ML | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/wandb/wandb.svg) |
-| [DVC](https://github.com/iterative/dvc) | Data version control for ML projects | Python | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/iterative/dvc.svg) |
+| [Hugging Face Hub](https://github.com/huggingface/huggingface_hub?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=model-management) | Client library for Hugging Face Hub | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/huggingface/huggingface_hub.svg)](https://github.com/huggingface/huggingface_hub/stargazers) |
+| [MLflow](https://github.com/mlflow/mlflow?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=model-management) | Platform for ML lifecycle management | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/mlflow/mlflow.svg)](https://github.com/mlflow/mlflow/stargazers) |
+| [Weights & Biases](https://github.com/wandb/wandb?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=model-management) | Developer tools for ML | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/wandb/wandb.svg)](https://github.com/wandb/wandb/stargazers) |
+| [DVC](https://github.com/iterative/dvc?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=model-management) | Data version control for ML projects | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/iterative/dvc.svg)](https://github.com/iterative/dvc/stargazers) |
+
+### Data Collection & Web Scraping
+
+| Tool | Description | Language | License | Stars |
+|------|-------------|----------|---------|-------|
+| [Firecrawl](https://github.com/mendableai/firecrawl?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=data-collection) | AI-powered web crawler that extracts and structures content for LLM pipelines | TypeScript | MIT | [![GitHub stars](https://img.shields.io/github/stars/mendableai/firecrawl.svg)](https://github.com/mendableai/firecrawl/stargazers) |
+| [Scrapy](https://github.com/scrapy/scrapy?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=data-collection) | Fast, high-level web crawling & scraping framework | Python | BSD-3 | [![GitHub stars](https://img.shields.io/github/stars/scrapy/scrapy.svg)](https://github.com/scrapy/scrapy/stargazers) |
+| [Playwright](https://github.com/microsoft/playwright?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=data-collection) | Web automation & scraping with headless browsers | TypeScript/Python/Java/.NET | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright.svg)](https://github.com/microsoft/playwright/stargazers) |
+| [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=data-collection) | Easy HTML/XML parsing for quick scraping tasks | Python | MIT | – |
+| [Selenium](https://github.com/SeleniumHQ/selenium?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=data-collection) | Browser automation framework (supports scraping) | Multiple | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/SeleniumHQ/selenium.svg)](https://github.com/SeleniumHQ/selenium/stargazers) |
+| [Apify SDK](https://github.com/apify/apify-sdk-python?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=data-collection) | Web scraping & automation platform SDK | Python/JavaScript | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/apify/apify-sdk-python.svg)](https://github.com/apify/apify-sdk-python/stargazers) |
+| [Newspaper3k](https://github.com/codelucas/newspaper?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=data-collection) | News & article extraction library | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/codelucas/newspaper.svg)](https://github.com/codelucas/newspaper/stargazers) |
 
 ## 🤖 Agent Frameworks
 
@@ -109,6 +122,7 @@ A curated, practical resource for AI engineers building with Large Language Mode
 - **[Code Generation Assistant](./templates/code-assistant/)** - AI-powered code generation and analysis
 - **[Document Analysis Tool](./templates/doc-analyzer/)** - Extract insights from documents
 - **[Content Generation Pipeline](./templates/content-pipeline/)** - Automated content creation workflow
+- **[Web Scraper for RAG](./templates/web-scraper-rag/)** - Comprehensive web scraping pipeline for data collection
 
 ## 🚀 Infrastructure & Deployment
 

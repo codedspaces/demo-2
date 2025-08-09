@@ -24,6 +24,8 @@ All external links include UTM parameters for proper attribution:
 - `orchestration` - LLM orchestration frameworks
 - `rag-tools` - RAG-specific tools
 - `evaluation` - Testing and evaluation tools
+- `model-management` - Model lifecycle and versioning
+- `data-collection` - Web scraping and data extraction
 - `agent-frameworks` - Agent development frameworks
 - `infrastructure` - Deployment and infrastructure
 - `newsletter` - Newsletter-related links

@@ -154,10 +154,11 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [LMDeploy](https://github.com/InternLM/lmdeploy) | Toolkit for compressing, deploying, and serving LLMs | Python | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/InternLM/lmdeploy.svg) |
 | [Text Generation Inference](https://github.com/huggingface/text-generation-inference) | Large Language Model Text Generation Inference | Rust/Python | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/huggingface/text-generation-inference.svg) |
 
-### Cloud Platforms
+### Inference Platforms
 
 | Platform | Description | Pricing | Features |
 |----------|-------------|---------|----------|
+| [Clarifai](https://www.clarifai.com/) | AI platform for computer vision, NLP, and generative AI | Free tier + Pay-as-you-go | Pre-trained models, Model training, Workflow automation |
 | [Modal](https://modal.com/) | Serverless platform for AI/ML workloads | Pay-per-use | Serverless GPU, Auto-scaling |
 | [Replicate](https://replicate.com/) | Run open-source models with a cloud API | Pay-per-use | Pre-built models, Custom training |
 | [Together AI](https://www.together.ai/) | Cloud platform for open-source models | Various | Open models, Fine-tuning |

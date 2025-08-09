@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering Toolkit - Analytics Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .metric-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .metric-card h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 0.25rem;
+        }
+        
+        .metric-change {
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .metric-change.positive {
+            color: #059669;
+        }
+        
+        .metric-change.negative {
+            color: #dc2626;
+        }
+        
+        .metric-change.neutral {
+            color: #64748b;
+        }
+        
+        .chart-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+        
+        .chart-container h2 {
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+        
+        .chart-wrapper {
+            position: relative;
+            height: 400px;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .tool-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .tool-card h4 {
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+        }
+        
+        .tool-stats {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        
+        .refresh-btn {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 1rem 1.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            transition: transform 0.2s ease;
+        }
+        
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: #64748b;
+        }
+        
+        .error {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            color: #dc2626;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧰 AI Engineering Toolkit</h1>
+        <p>Analytics Dashboard - Real-time tracking and insights</p>
+    </div>
+
+    <div class="container">
+        <!-- Key Metrics -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <h3>GitHub Stars</h3>
+                <div class="metric-value" id="stars-count">-</div>
+                <div class="metric-change" id="stars-change">Loading...</div>
+            </div>
+            
+            <div class="metric-card">
+                <h3>Repository Forks</h3>
+                <div class="metric-value" id="forks-count">-</div>
+                <div class="metric-change" id="forks-change">Loading...</div>
+            </div>
+            
+            <div class="metric-card">
+                <h3>Weekly Views</h3>
+                <div class="metric-value" id="views-count">-</div>
+                <div class="metric-change" id="views-change">Loading...</div>
+            </div>
+            
+            <div class="metric-card">
+                <h3>Newsletter Signups</h3>
+                <div class="metric-value" id="newsletter-count">-</div>
+                <div class="metric-change" id="newsletter-change">Loading...</div>
+            </div>
+        </div>
+
+        <!-- Growth Charts -->
+        <div class="chart-container">
+            <h2>📈 Repository Growth</h2>
+            <div class="chart-wrapper">
+                <canvas id="growthChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h2>🔗 Tool Popularity</h2>
+            <div class="chart-wrapper">
+                <canvas id="toolChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Popular Tools -->
+        <div class="chart-container">
+            <h2>⭐ Trending Tools</h2>
+            <div class="tools-grid" id="tools-grid">
+                <!-- Tools will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <button class="refresh-btn" onclick="refreshData()">
+        🔄 Refresh Data
+    </button>
+
+    <script>
+        // Configuration
+        const config = {
+            github: {
+                owner: 'yourusername',
+                repo: 'ai-engineering-toolkit'
+            },
+            updateInterval: 300000 // 5 minutes
+        };
+
+        // Chart instances
+        let growthChart = null;
+        let toolChart = null;
+
+        // Initialize dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCharts();
+            loadData();
+            
+            // Auto-refresh every 5 minutes
+            setInterval(loadData, config.updateInterval);
+        });
+
+        function initializeCharts() {
+            // Growth Chart
+            const growthCtx = document.getElementById('growthChart').getContext('2d');
+            growthChart = new Chart(growthCtx, {
+                type: 'line',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'Stars',
+                        data: [],
+                        borderColor: '#667eea',
+                        backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                        tension: 0.4
+                    }, {
+                        label: 'Forks',
+                        data: [],
+                        borderColor: '#f093fb',
+                        backgroundColor: 'rgba(240, 147, 251, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            // Tool Chart
+            const toolCtx = document.getElementById('toolChart').getContext('2d');
+            toolChart = new Chart(toolCtx, {
+                type: 'bar',
+                data: {
+                    labels: [],
+                    datasets: [{
+                        label: 'GitHub Stars',
+                        data: [],
+                        backgroundColor: [
+                            '#667eea', '#f093fb', '#f5576c', '#4facfe',
+                            '#43e97b', '#fa709a', '#feb47b', '#ff9a9e'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        async function loadData() {
+            try {
+                // Simulate API calls - replace with actual endpoints
+                const repoData = await fetchRepositoryData();
+                const toolData = await fetchToolData();
+                const analyticsData = await fetchAnalyticsData();
+
+                updateMetrics(repoData, analyticsData);
+                updateCharts(repoData, toolData);
+                updateToolsGrid(toolData);
+
+            } catch (error) {
+                console.error('Error loading data:', error);
+                showError('Failed to load analytics data. Please try again.');
+            }
+        }
+
+        async function fetchRepositoryData() {
+            // Simulate repository data
+            return {
+                stars: 1247,
+                forks: 89,
+                watchers: 156,
+                open_issues: 12,
+                stars_growth: 23,
+                forks_growth: 5,
+                growth_rate: 12.5
+            };
+        }
+
+        async function fetchToolData() {
+            // Simulate tool popularity data
+            return [
+                { name: 'LangChain', stars: 45789, category: 'Orchestration', growth: 15.2 },
+                { name: 'Chroma', stars: 8234, category: 'Vector DB', growth: 8.7 },
+                { name: 'AutoGen', stars: 12456, category: 'Agents', growth: 22.1 },
+                { name: 'Qdrant', stars: 6789, category: 'Vector DB', growth: 11.3 },
+                { name: 'CrewAI', stars: 3421, category: 'Agents', growth: 18.9 },
+                { name: 'DSPy', stars: 5678, category: 'Orchestration', growth: 9.4 }
+            ];
+        }
+
+        async function fetchAnalyticsData() {
+            // Simulate analytics data
+            return {
+                weekly_views: 2847,
+                newsletter_signups: 34,
+                conversion_rate: 2.8,
+                top_referrers: ['twitter.com', 'reddit.com', 'news.ycombinator.com']
+            };
+        }
+
+        function updateMetrics(repoData, analyticsData) {
+            // Update star metrics
+            document.getElementById('stars-count').textContent = repoData.stars.toLocaleString();
+            updateChangeIndicator('stars-change', repoData.stars_growth, 'this week');
+
+            // Update fork metrics
+            document.getElementById('forks-count').textContent = repoData.forks.toLocaleString();
+            updateChangeIndicator('forks-change', repoData.forks_growth, 'this week');
+
+            // Update view metrics
+            document.getElementById('views-count').textContent = analyticsData.weekly_views.toLocaleString();
+            updateChangeIndicator('views-change', 156, 'vs last week');
+
+            // Update newsletter metrics
+            document.getElementById('newsletter-count').textContent = analyticsData.newsletter_signups.toLocaleString();
+            updateChangeIndicator('newsletter-change', 8, 'this week');
+        }
+
+        function updateChangeIndicator(elementId, change, period) {
+            const element = document.getElementById(elementId);
+            const isPositive = change > 0;
+            const isNegative = change < 0;
+            
+            element.className = 'metric-change ' + (isPositive ? 'positive' : isNegative ? 'negative' : 'neutral');
+            
+            const arrow = isPositive ? '↗' : isNegative ? '↘' : '→';
+            const sign = isPositive ? '+' : '';
+            
+            element.textContent = `${arrow} ${sign}${change} ${period}`;
+        }
+
+        function updateCharts(repoData, toolData) {
+            // Update growth chart with sample data
+            const last7Days = Array.from({length: 7}, (_, i) => {
+                const date = new Date();
+                date.setDate(date.getDate() - (6 - i));
+                return date.toLocaleDateString();
+            });
+
+            growthChart.data.labels = last7Days;
+            growthChart.data.datasets[0].data = [1201, 1215, 1228, 1235, 1242, 1245, 1247];
+            growthChart.data.datasets[1].data = [82, 84, 85, 86, 87, 88, 89];
+            growthChart.update();
+
+            // Update tool chart
+            toolChart.data.labels = toolData.map(tool => tool.name);
+            toolChart.data.datasets[0].data = toolData.map(tool => tool.stars);
+            toolChart.update();
+        }
+
+        function updateToolsGrid(toolData) {
+            const grid = document.getElementById('tools-grid');
+            grid.innerHTML = '';
+
+            toolData.forEach(tool => {
+                const card = document.createElement('div');
+                card.className = 'tool-card';
+                
+                const growthClass = tool.growth > 15 ? 'positive' : tool.growth > 5 ? 'neutral' : 'negative';
+                
+                card.innerHTML = `
+                    <h4>${tool.name}</h4>
+                    <div class="tool-stats">
+                        <span>⭐ ${tool.stars.toLocaleString()}</span>
+                        <span>📂 ${tool.category}</span>
+                        <span class="${growthClass}">📈 ${tool.growth}%</span>
+                    </div>
+                `;
+                
+                grid.appendChild(card);
+            });
+        }
+
+        function refreshData() {
+            const button = document.querySelector('.refresh-btn');
+            button.textContent = '🔄 Refreshing...';
+            button.disabled = true;
+            
+            loadData().finally(() => {
+                button.textContent = '🔄 Refresh Data';
+                button.disabled = false;
+            });
+        }
+
+        function showError(message) {
+            const container = document.querySelector('.container');
+            const error = document.createElement('div');
+            error.className = 'error';
+            error.textContent = message;
+            container.insertBefore(error, container.firstChild);
+            
+            setTimeout(() => error.remove(), 5000);
+        }
+
+        // Export functionality for integration
+        window.analyticsAPI = {
+            loadData,
+            refreshData,
+            updateMetrics,
+            showError
+        };
+    </script>
+</body>
+</html>

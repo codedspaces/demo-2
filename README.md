@@ -6,7 +6,9 @@ A curated, practical resource for AI engineers building with Large Language Mode
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/ai-engineering-toolkit.svg)](https://github.com/yourusername/ai-engineering-toolkit/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/ai-engineering-toolkit.svg?style=social)](https://github.com/yourusername/ai-engineering-toolkit/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/ai-engineering-toolkit.svg?style=social)](https://github.com/yourusername/ai-engineering-toolkit/network/members)
+[![Twitter Follow](https://img.shields.io/twitter/follow/yourusername?style=social)](https://twitter.com/yourusername)
 
 ## 📋 Table of Contents
 
@@ -30,22 +32,22 @@ A curated, practical resource for AI engineers building with Large Language Mode
 
 | Tool | Description | Language | License | Stars |
 |------|-------------|----------|---------|-------|
-| [Pinecone](https://www.pinecone.io/) | Managed vector database for production AI applications | API/SDK | Commercial | - |
-| [Weaviate](https://github.com/weaviate/weaviate) | Open-source vector database with GraphQL API | Go | BSD-3 | ![GitHub stars](https://img.shields.io/github/stars/weaviate/weaviate.svg) |
-| [Qdrant](https://github.com/qdrant/qdrant) | Vector similarity search engine with extended filtering | Rust | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/qdrant/qdrant.svg) |
-| [Chroma](https://github.com/chroma-core/chroma) | Open-source embedding database for LLM apps | Python | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/chroma-core/chroma.svg) |
-| [Milvus](https://github.com/milvus-io/milvus) | Cloud-native vector database for scalable similarity search | Go/C++ | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/milvus-io/milvus.svg) |
-| [FAISS](https://github.com/facebookresearch/faiss) | Library for efficient similarity search and clustering | C++/Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/facebookresearch/faiss.svg) |
+| [Pinecone](https://www.pinecone.io/?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=vector-db) | Managed vector database for production AI applications | API/SDK | Commercial | - |
+| [Weaviate](https://github.com/weaviate/weaviate?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=vector-db) | Open-source vector database with GraphQL API | Go | BSD-3 | [![GitHub stars](https://img.shields.io/github/stars/weaviate/weaviate.svg)](https://github.com/weaviate/weaviate/stargazers) |
+| [Qdrant](https://github.com/qdrant/qdrant?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=vector-db) | Vector similarity search engine with extended filtering | Rust | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/qdrant/qdrant.svg)](https://github.com/qdrant/qdrant/stargazers) |
+| [Chroma](https://github.com/chroma-core/chroma?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=vector-db) | Open-source embedding database for LLM apps | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/chroma-core/chroma.svg)](https://github.com/chroma-core/chroma/stargazers) |
+| [Milvus](https://github.com/milvus-io/milvus?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=vector-db) | Cloud-native vector database for scalable similarity search | Go/C++ | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/milvus-io/milvus.svg)](https://github.com/milvus-io/milvus/stargazers) |
+| [FAISS](https://github.com/facebookresearch/faiss?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=vector-db) | Library for efficient similarity search and clustering | C++/Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/facebookresearch/faiss.svg)](https://github.com/facebookresearch/faiss/stargazers) |
 
 ### Orchestration & Workflows
 
 | Tool | Description | Language | License | Stars |
 |------|-------------|----------|---------|-------|
-| [LangChain](https://github.com/langchain-ai/langchain) | Framework for developing LLM applications | Python/JS | MIT | ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain.svg) |
-| [LlamaIndex](https://github.com/run-llama/llama_index) | Data framework for LLM applications | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/run-llama/llama_index.svg) |
-| [Haystack](https://github.com/deepset-ai/haystack) | End-to-end NLP framework for production | Python | Apache-2.0 | ![GitHub stars](https://img.shields.io/github/stars/deepset-ai/haystack.svg) |
-| [DSPy](https://github.com/stanfordnlp/dspy) | Framework for algorithmically optimizing LM prompts | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/stanfordnlp/dspy.svg) |
-| [Semantic Kernel](https://github.com/microsoft/semantic-kernel) | SDK for integrating AI into conventional programming languages | C#/Python/Java | MIT | ![GitHub stars](https://img.shields.io/github/stars/microsoft/semantic-kernel.svg) |
+| [LangChain](https://github.com/langchain-ai/langchain?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | Framework for developing LLM applications | Python/JS | MIT | [![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain.svg)](https://github.com/langchain-ai/langchain/stargazers) |
+| [LlamaIndex](https://github.com/run-llama/llama_index?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | Data framework for LLM applications | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/run-llama/llama_index.svg)](https://github.com/run-llama/llama_index/stargazers) |
+| [Haystack](https://github.com/deepset-ai/haystack?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | End-to-end NLP framework for production | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/deepset-ai/haystack.svg)](https://github.com/deepset-ai/haystack/stargazers) |
+| [DSPy](https://github.com/stanfordnlp/dspy?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | Framework for algorithmically optimizing LM prompts | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/stanfordnlp/dspy.svg)](https://github.com/stanfordnlp/dspy/stargazers) |
+| [Semantic Kernel](https://github.com/microsoft/semantic-kernel?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | SDK for integrating AI into conventional programming languages | C#/Python/Java | MIT | [![GitHub stars](https://img.shields.io/github/stars/microsoft/semantic-kernel.svg)](https://github.com/microsoft/semantic-kernel/stargazers) |
 
 ### RAG (Retrieval-Augmented Generation)
 
@@ -80,11 +82,11 @@ A curated, practical resource for AI engineers building with Large Language Mode
 
 | Framework | Description | Language | License | Stars |
 |-----------|-------------|----------|---------|-------|
-| [AutoGen](https://github.com/microsoft/autogen) | Multi-agent conversation framework | Python | CC-BY-4.0 | ![GitHub stars](https://img.shields.io/github/stars/microsoft/autogen.svg) |
-| [CrewAI](https://github.com/joaomdmoura/crewAI) | Framework for orchestrating role-playing autonomous AI agents | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/joaomdmoura/crewAI.svg) |
-| [LangGraph](https://github.com/langchain-ai/langgraph) | Build resilient language agents as graphs | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langgraph.svg) |
-| [AgentOps](https://github.com/AgentOps-AI/agentops) | Python SDK for AI agent monitoring, LLM cost tracking, benchmarking | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/AgentOps-AI/agentops.svg) |
-| [Swarm](https://github.com/openai/swarm) | Educational framework for exploring ergonomic, lightweight multi-agent orchestration | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/openai/swarm.svg) |
+| [AutoGen](https://github.com/microsoft/autogen?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=agent-frameworks) | Multi-agent conversation framework | Python | CC-BY-4.0 | [![GitHub stars](https://img.shields.io/github/stars/microsoft/autogen.svg)](https://github.com/microsoft/autogen/stargazers) |
+| [CrewAI](https://github.com/joaomdmoura/crewAI?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=agent-frameworks) | Framework for orchestrating role-playing autonomous AI agents | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/joaomdmoura/crewAI.svg)](https://github.com/joaomdmoura/crewAI/stargazers) |
+| [LangGraph](https://github.com/langchain-ai/langgraph?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=agent-frameworks) | Build resilient language agents as graphs | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langgraph.svg)](https://github.com/langchain-ai/langgraph/stargazers) |
+| [AgentOps](https://github.com/AgentOps-AI/agentops?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=agent-frameworks) | Python SDK for AI agent monitoring, LLM cost tracking, benchmarking | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/AgentOps-AI/agentops.svg)](https://github.com/AgentOps-AI/agentops/stargazers) |
+| [Swarm](https://github.com/openai/swarm?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=agent-frameworks) | Educational framework for exploring ergonomic, lightweight multi-agent orchestration | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/openai/swarm.svg)](https://github.com/openai/swarm/stargazers) |
 | [Agency Swarm](https://github.com/VRSEN/agency-swarm) | An open-source agent framework designed to automate your workflows | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/VRSEN/agency-swarm.svg) |
 | [Multi-Agent Systems](https://github.com/microsoft/multi-agent-systems) | Research into multi-agent systems and applications | Python | MIT | ![GitHub stars](https://img.shields.io/github/stars/microsoft/multi-agent-systems.svg) |
 
@@ -208,6 +210,28 @@ We welcome contributions! This toolkit grows stronger with community input.
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📧 Stay Connected
+
+### Newsletter
+Get weekly AI engineering insights, tool reviews, and exclusive demos delivered to your inbox:
+
+**[📧 Subscribe to AI Engineering Newsletter →](https://aiengineering.substack.com/subscribe?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=readme-footer)**
+
+*Join 10,000+ engineers building better LLM applications*
+
+### Social Media
+[![Twitter Follow](https://img.shields.io/twitter/follow/ai_engineering?style=social)](https://twitter.com/ai_engineering?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=social)
+[![LinkedIn Follow](https://img.shields.io/badge/LinkedIn-Follow-blue?style=social&logo=linkedin)](https://linkedin.com/in/yourusername?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=social)
+
+### Share This Repository
+[![Share on Twitter](https://img.shields.io/twitter/url?url=https%3A//github.com/yourusername/ai-engineering-toolkit&style=social)](https://twitter.com/intent/tweet?url=https%3A//github.com/yourusername/ai-engineering-toolkit&text=🧰%20AI%20Engineering%20Toolkit%20-%20Build%20better%20LLM%20apps%20faster&via=ai_engineering&hashtags=AI,LLM,Engineering,OpenSource)
+
+[![Share on LinkedIn](https://img.shields.io/badge/Share%20on-LinkedIn-blue?style=social&logo=linkedin)](https://www.linkedin.com/sharing/share-offsite/?url=https%3A//github.com/yourusername/ai-engineering-toolkit&summary=AI%20Engineering%20Toolkit%20-%20A%20curated%20collection%20of%20tools%20and%20resources%20for%20building%20production-ready%20LLM%20applications)
+
+[![Share on Reddit](https://img.shields.io/badge/Share%20on-Reddit-orange?style=social&logo=reddit)](https://reddit.com/submit?url=https%3A//github.com/yourusername/ai-engineering-toolkit&title=AI%20Engineering%20Toolkit%20-%20Build%20better%20LLM%20apps)
 
 ---
 

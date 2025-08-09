@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Star Tracker</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 2rem; }
+    .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.25rem; max-width: 420px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+    .count { font-size: 3rem; font-weight: 700; margin: 0.5rem 0; }
+    .links a { margin-right: 1rem; color: #2563eb; text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+    .status { color: #6b7280; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="status">Tracking: <span id="repo">...</span></div>
+    <div class="count" id="stars">—</div>
+    <div class="links">
+      <a id="repoLink" href="#" target="_blank" rel="noopener">Repository</a>
+      <a id="starsLink" href="#" target="_blank" rel="noopener">Stargazers</a>
+    </div>
+    <div class="status" id="conn">Connecting…</div>
+  </div>
+
+  <script>
+    const starsEl = document.getElementById('stars');
+    const repoEl = document.getElementById('repo');
+    const repoLink = document.getElementById('repoLink');
+    const starsLink = document.getElementById('starsLink');
+    const connEl = document.getElementById('conn');
+
+    function render(data) {
+      if (!data) return;
+      const { stars, starsUrl, repoUrl, repo } = data;
+      starsEl.textContent = new Intl.NumberFormat().format(stars);
+      repoEl.textContent = repo;
+      repoLink.href = repoUrl;
+      starsLink.href = starsUrl;
+    }
+
+    async function prime() {
+      try {
+        const res = await fetch('/api/stars');
+        if (res.ok) {
+          const data = await res.json();
+          render(data);
+        }
+      } catch {}
+    }
+
+    prime();
+
+    const ev = new EventSource('/events');
+    ev.onopen = () => { connEl.textContent = 'Live: connected'; };
+    ev.onerror = () => { connEl.textContent = 'Live: disconnected (retrying)'; };
+    ev.onmessage = (msg) => {
+      try { render(JSON.parse(msg.data)); } catch {}
+    };
+  </script>
+</body>
+</html>

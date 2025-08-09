@@ -50,6 +50,16 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [DSPy](https://github.com/stanfordnlp/dspy?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | Framework for algorithmically optimizing LM prompts | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/stanfordnlp/dspy.svg)](https://github.com/stanfordnlp/dspy/stargazers) |
 | [Semantic Kernel](https://github.com/microsoft/semantic-kernel?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | SDK for integrating AI into conventional programming languages | C#/Python/Java | MIT | [![GitHub stars](https://img.shields.io/github/stars/microsoft/semantic-kernel.svg)](https://github.com/microsoft/semantic-kernel/stargazers) |
 
+### PDF Extraction Tools
+
+| Tool | Description | Language | License | Stars |
+|------|-------------|----------|---------|-------|
+| [Docling](https://github.com/docling-project/docling) | AI-powered toolkit converting PDF, DOCX, PPTX, HTML, images into structured JSON/Markdown with layout, OCR, table, and code recognition | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/docling-project/docling.svg)](https://github.com/docling-project/docling/stargazers) |
+| [pdfplumber](https://github.com/jsvine/pdfplumber) | Drill through PDFs at a character level, extract text & tables, and visually debug extraction | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/jsvine/pdfplumber.svg)](https://github.com/jsvine/pdfplumber/stargazers) |
+| [PyMuPDF (fitz)](https://github.com/pymupdf/PyMuPDF) | Lightweight, high-performance PDF parser for text/image extraction and manipulation | Python / C | AGPL-3.0 | [![GitHub stars](https://img.shields.io/github/stars/pymupdf/PyMuPDF.svg)](https://github.com/pymupdf/PyMuPDf/stargazers) |
+| [PDF.js](https://github.com/mozilla/pdf.js) | Browser-based PDF renderer with text extraction capabilities | JavaScript | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/mozilla/pdf.js.svg)](https://github.com/mozilla/pdf.js/stargazers) |
+| [Camelot](https://github.com/camelot-dev/camelot) | Extracts structured tabular data from PDFs into DataFrames and CSVs | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/camelot-dev/camelot.svg)](https://github.com/camelot-dev/camelot/stargazers) |
+
 ### RAG (Retrieval-Augmented Generation)
 
 | Tool | Description | Language | License | Stars |

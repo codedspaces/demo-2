@@ -136,6 +136,48 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [RL4LMs](https://github.com/allenai/RL4LMs?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-training) | RL library to fine-tune LMs to human preferences | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/allenai/RL4LMs.svg)](https://github.com/allenai/RL4LMs/stargazers) |
 | [torchtune](https://github.com/pytorch/torchtune?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-training) | PyTorch-native library for fine-tuning LLMs | Python | BSD-3 | [![GitHub stars](https://img.shields.io/github/stars/pytorch/torchtune.svg)](https://github.com/pytorch/torchtune/stargazers) |
 
+### LLM Inference
+
+| Tool | Description | Language | License | Stars |
+|------|-------------|----------|---------|-------|
+| [LLM Compressor](https://github.com/mit-han-lab/llm-compressor?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-inference) | Transformers-compatible library for applying various compression algorithms to LLMs for optimized deployment | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/mit-han-lab/llm-compressor.svg)](https://github.com/mit-han-lab/llm-compressor/stargazers) |
+| [LightLLM](https://github.com/ModelTC/lightllm?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-inference) | Lightweight Python-based LLM inference and serving framework with easy scalability and high performance | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/ModelTC/lightllm.svg)](https://github.com/ModelTC/lightllm/stargazers) |
+| [vLLM](https://github.com/vllm-project/vllm?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-inference) | High-throughput and memory-efficient inference and serving engine for LLMs | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/vllm-project/vllm.svg)](https://github.com/vllm-project/vllm/stargazers) |
+| [torchchat](https://github.com/facebookresearch/torchchat?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-inference) | Run PyTorch LLMs locally on servers, desktop, and mobile | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/facebookresearch/torchchat.svg)](https://github.com/facebookresearch/torchchat/stargazers) |
+| [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-inference) | NVIDIA library for optimizing LLM inference with TensorRT | C++/Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/TensorRT-LLM.svg)](https://github.com/NVIDIA/TensorRT-LLM/stargazers) |
+| [WebLLM](https://github.com/mlc-ai/web-llm?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-inference) | High-performance in-browser LLM inference engine | TypeScript/Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/mlc-ai/web-llm.svg)](https://github.com/mlc-ai/web-llm/stargazers) |
+
+### LLM Safety and Security
+
+| Tool | Description | Language | License | Stars |
+|------|-------------|----------|---------|-------|
+| [JailbreakEval](https://github.com/centerforaisafety/JailbreakEval?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | Automated evaluators for assessing jailbreak attempts | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/centerforaisafety/JailbreakEval.svg)](https://github.com/centerforaisafety/JailbreakEval/stargazers) |
+| [EasyJailbreak](https://github.com/thu-coai/EasyJailbreak?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | Easy-to-use Python framework to generate adversarial jailbreak prompts | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/thu-coai/EasyJailbreak.svg)](https://github.com/thu-coai/EasyJailbreak/stargazers) |
+| [Guardrails](https://github.com/ShreyaR/guardrails?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | Add guardrails to large language models | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/ShreyaR/guardrails.svg)](https://github.com/ShreyaR/guardrails/stargazers) |
+| [LLM Guard](https://github.com/deadbits/llm-guard?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | Security toolkit for LLM interactions | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/deadbits/llm-guard.svg)](https://github.com/deadbits/llm-guard/stargazers) |
+| [AuditNLG](https://github.com/Alex-Fabbri/AuditNLG?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | Reduce risks in generative AI systems for language | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/Alex-Fabbri/AuditNLG.svg)](https://github.com/Alex-Fabbri/AuditNLG/stargazers) |
+| [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | Toolkit for adding programmable guardrails to LLM conversational systems | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/NVIDIA/NeMo-Guardrails.svg)](https://github.com/NVIDIA/NeMo-Guardrails/stargazers) |
+| [Garak](https://github.com/leondz/garak?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | LLM vulnerability scanner | Python | MIT | [![GitHub stars](https://img.shields.io/github/stars/leondz/garak.svg)](https://github.com/leondz/garak/stargazers) |
+| [DeepTeam](https://github.com/DeepTeamAI/deepteam?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | LLM red teaming framework | Python | Apache-2.0 | [![GitHub stars](https://img.shields.io/github/stars/DeepTeamAI/deepteam.svg)](https://github.com/DeepTeamAI/deepteam/stargazers) |
+
+### LLM Utilities
+
+| Tool | Description | Language | License |
+|------|-------------|----------|---------|
+| [Text Machina](https://github.com/Genaios/TextMachina) | Modular Python framework for building unbiased datasets for MGT-related tasks (detection, attribution, boundary detection) | Python | - |
+| [LLM Reasoners](https://github.com/maitrix-org/llm-reasoners) | Library for advanced large language model reasoning | Python | - |
+| [EasyEdit](https://github.com/zjunlp/EasyEdit) | Easy-to-use knowledge editing framework for LLMs | Python | Apache-2.0 |
+| [CodeTF](https://github.com/salesforce/CodeTF) | One-stop Transformer Library for state-of-the-art Code LLM | Python | Apache-2.0 |
+| [spacy-llm](https://github.com/explosion/spacy-llm) | Integrates LLMs into spaCy for prototyping, prompting, and structured NLP outputs | Python | MIT |
+| [pandas-ai](https://github.com/Sinaptik-AI/pandas-ai) | Chat with your database (SQL, CSV, pandas, polars, MongoDB, NoSQL, etc.) | Python | MIT |
+| [LLM Transparency Tool](https://github.com/facebookresearch/llm-transparency-tool) | Interactive toolkit for analyzing internal workings of Transformer-based LMs | Python | - |
+| [Vanna](https://github.com/vanna-ai/vanna) | Text-to-SQL generation via LLMs using RAG for accurate database queries | Python | Apache-2.0 |
+| [mergekit](https://github.com/arcee-ai/MergeKit) | Tools for merging pretrained LLMs | Python | Apache-2.0 |
+| [MarkLLM](https://github.com/THU-BPM/MarkLLM) | Toolkit for LLM watermarking | Python | - |
+| [LLMSanitize](https://github.com/ntunlp/LLMSanitize) | Contamination detection in NLP datasets and LLMs | Python | - |
+| [Annotateai](https://github.com/neuml/annotateai) | Automatically annotate papers using LLMs | Python | - |
+| [LLM Reasoner](https://github.com/harishsg993010/LLM-Reasoner) | Makes any LLM think like OpenAI o1 and DeepSeek R1 | Python | - |
+
 ## 📦 LLM App Templates
 
 ### RAG Applications

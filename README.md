@@ -6,9 +6,9 @@ A curated, practical resource for AI engineers building with Large Language Mode
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/ai-engineering-toolkit.svg?style=social)](https://github.com/yourusername/ai-engineering-toolkit/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/ai-engineering-toolkit.svg?style=social)](https://github.com/yourusername/ai-engineering-toolkit/network/members)
-[![Twitter Follow](https://img.shields.io/twitter/follow/yourusername?style=social)](https://twitter.com/yourusername)
+[![GitHub stars](https://img.shields.io/github/stars/yourgithubusername/ai-engineering-toolkit.svg?style=social)](https://github.com/yourgithubusername/ai-engineering-toolkit/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourgithubusername/ai-engineering-toolkit.svg?style=social)](https://github.com/yourgithubusername/ai-engineering-toolkit/network/members)
+[![X Follow](https://img.shields.io/twitter/follow/Sumanth_077?style=social&logo=x)](https://x.com/Sumanth_077)
 
 ## 📋 Table of Contents
 
@@ -178,27 +178,6 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [Annotateai](https://github.com/neuml/annotateai) | Automatically annotate papers using LLMs | Python | - |
 | [LLM Reasoner](https://github.com/harishsg993010/LLM-Reasoner) | Makes any LLM think like OpenAI o1 and DeepSeek R1 | Python | - |
 
-## 📦 LLM App Templates
-
-### RAG Applications
-
-- **[Basic RAG Chatbot](./templates/rag-chatbot/)** - Simple RAG implementation with vector search
-- **[Multi-Modal RAG](./templates/multimodal-rag/)** - RAG with support for documents, images, and audio
-- **[Enterprise RAG](./templates/enterprise-rag/)** - Production-ready RAG with authentication and monitoring
-
-### Conversational AI
-
-- **[Memory-Enabled Chatbot](./templates/memory-chatbot/)** - Chatbot with conversation memory and context
-- **[Function Calling Agent](./templates/function-agent/)** - Agent with tool use capabilities
-- **[Multi-Turn Assistant](./templates/assistant/)** - Advanced conversational assistant
-
-### Specialized Applications
-
-- **[Code Generation Assistant](./templates/code-assistant/)** - AI-powered code generation and analysis
-- **[Document Analysis Tool](./templates/doc-analyzer/)** - Extract insights from documents
-- **[Content Generation Pipeline](./templates/content-pipeline/)** - Automated content creation workflow
-- **[Web Scraper for RAG](./templates/web-scraper-rag/)** - Comprehensive web scraping pipeline for data collection
-
 ## 🚀 Infrastructure & Deployment
 
 ### Local Development & Serving
@@ -229,47 +208,6 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [Together AI](https://www.together.ai/) | Cloud platform for open-source models | Various | Open models, Fine-tuning |
 | [Anyscale](https://www.anyscale.com/) | Ray-based platform for AI applications | Enterprise | Distributed training, Serving |
 
-### Containerization & Orchestration
-
-- **[Docker Templates](./infrastructure/docker/)** - Containerized LLM applications
-- **[Kubernetes Manifests](./infrastructure/k8s/)** - K8s deployments for LLM services
-- **[Terraform Modules](./infrastructure/terraform/)** - IaC for cloud deployments
-
-## 📚 Tutorials & Notebooks
-
-### Getting Started
-
-- **[LLM Basics](./tutorials/01-llm-basics/)** - Understanding LLMs and prompt engineering
-- **[Setting Up Your Environment](./tutorials/02-environment-setup/)** - Development environment configuration
-- **[Your First LLM App](./tutorials/03-first-app/)** - Build a simple LLM application
-
-### Intermediate Guides
-
-- **[Building RAG Systems](./tutorials/04-rag-systems/)** - Comprehensive RAG implementation guide
-- **[Agent Development](./tutorials/05-agent-development/)** - Creating intelligent agents
-- **[Fine-tuning Models](./tutorials/06-fine-tuning/)** - Custom model training
-
-### Advanced Topics
-
-- **[Production Deployment](./tutorials/07-production/)** - Deploying LLM apps at scale
-- **[Performance Optimization](./tutorials/08-optimization/)** - Optimizing inference and costs
-- **[Multi-Agent Systems](./tutorials/09-multi-agent/)** - Building complex agent networks
-
-### Jupyter Notebooks
-
-- **[Quick Start Notebooks](./notebooks/quickstart/)** - Interactive tutorials
-- **[Use Case Examples](./notebooks/examples/)** - Real-world implementations
-- **[Benchmarking](./notebooks/benchmarks/)** - Performance comparisons
-
-## 📰 Newsletter Companion Demos
-
-Code examples and configurations featured in the AI Engineering newsletter:
-
-- **[Latest Demos](./newsletter-demos/latest/)** - Most recent newsletter content
-- **[Tool Reviews](./newsletter-demos/tool-reviews/)** - Hands-on tool evaluations
-- **[Architecture Deep Dives](./newsletter-demos/architecture/)** - System design examples
-- **[Performance Studies](./newsletter-demos/performance/)** - Benchmarking and optimization
-
 ## 🤝 Contributing
 
 We welcome contributions! This toolkit grows stronger with community input.
@@ -289,14 +227,6 @@ We welcome contributions! This toolkit grows stronger with community input.
 - **Well-documented** - Provide clear descriptions and usage examples
 - **Up-to-date** - Ensure tools are actively maintained
 
-### Areas We Need Help With
-
-- [ ] More production deployment examples
-- [ ] Additional evaluation frameworks
-- [ ] Multi-modal AI tools
-- [ ] Cost optimization strategies
-- [ ] Security and privacy tools
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -308,20 +238,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Newsletter
 Get weekly AI engineering insights, tool reviews, and exclusive demos delivered to your inbox:
 
-**[📧 Subscribe to AI Engineering Newsletter →](https://aiengineering.substack.com/subscribe?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=readme-footer)**
+**[📧 Subscribe to AI Engineering Newsletter →](https://aiengineering.beehiiv.com/subscribe)**
 
-*Join 10,000+ engineers building better LLM applications*
+*Join 100,000+ engineers building better LLM applications*
 
 ### Social Media
-[![Twitter Follow](https://img.shields.io/twitter/follow/ai_engineering?style=social)](https://twitter.com/ai_engineering?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=social)
-[![LinkedIn Follow](https://img.shields.io/badge/LinkedIn-Follow-blue?style=social&logo=linkedin)](https://linkedin.com/in/yourusername?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=social)
+[![X Follow](https://img.shields.io/twitter/follow/Sumanth_077?style=social&logo=x)](https://x.com/Sumanth_077)
+[![LinkedIn Follow](https://img.shields.io/badge/LinkedIn-Follow-blue?style=social&logo=linkedin)](https://www.linkedin.com/company/theaiengineering/)
 
 ### Share This Repository
-[![Share on Twitter](https://img.shields.io/twitter/url?url=https%3A//github.com/yourusername/ai-engineering-toolkit&style=social)](https://twitter.com/intent/tweet?url=https%3A//github.com/yourusername/ai-engineering-toolkit&text=🧰%20AI%20Engineering%20Toolkit%20-%20Build%20better%20LLM%20apps%20faster&via=ai_engineering&hashtags=AI,LLM,Engineering,OpenSource)
+[![Share on X](https://img.shields.io/twitter/url?url=https%3A//github.com/yourusername/ai-engineering-toolkit&style=social&logo=x)](https://twitter.com/intent/tweet?url=https%3A//github.com/yourusername/ai-engineering-toolkit&text=🧰%20AI%20Engineering%20Toolkit%20-%20Build%20better%20LLM%20apps%20faster&via=Sumanth_077&hashtags=AI,LLM,Engineering,OpenSource)
 
 [![Share on LinkedIn](https://img.shields.io/badge/Share%20on-LinkedIn-blue?style=social&logo=linkedin)](https://www.linkedin.com/sharing/share-offsite/?url=https%3A//github.com/yourusername/ai-engineering-toolkit&summary=AI%20Engineering%20Toolkit%20-%20A%20curated%20collection%20of%20tools%20and%20resources%20for%20building%20production-ready%20LLM%20applications)
 
 [![Share on Reddit](https://img.shields.io/badge/Share%20on-Reddit-orange?style=social&logo=reddit)](https://reddit.com/submit?url=https%3A//github.com/yourusername/ai-engineering-toolkit&title=AI%20Engineering%20Toolkit%20-%20Build%20better%20LLM%20apps)
+
+---
+
 
 ---
 

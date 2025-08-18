@@ -3,7 +3,7 @@
 
 **Build better LLM apps — faster, smarter, production-ready.**
 
-A curated, practical resource for AI engineers building with Large Language Models. This toolkit includes battle-tested tools, frameworks, templates, and reference implementations for developing, deploying, and optimizing LLM-powered systems.
+A curated, list of 100+ libraries and frameworks for AI engineers building with Large Language Models. This toolkit includes battle-tested tools, frameworks, templates, and reference implementations for developing, deploying, and optimizing LLM-powered systems.
 
 [![Toolkit banner](https://github.com/codedspaces/demo-2/blob/d9442b179eba2856e8c6e62bb1c6a1bb8c676b89/2.jpg?raw=true)](https://aiengineering.beehiiv.com/subscribe)
 
@@ -29,15 +29,14 @@ A curated, practical resource for AI engineers building with Large Language Mode
   - [Model Management](#model-management)
   - [Data Collection & Web Scraping](#data-collection--web-scraping)
 - [🤖 Agent Frameworks](#-agent-frameworks)
-- [📦 LLM App Templates](#-llm-app-templates)
-  - [LLM Development & Optimization](#llm-development--optimization)
+- [📦 LLM Development & Optimization](#llm-development--optimization)
   - [LLM Inference](#llm-inference)
   - [LLM Safety & Security](#llm-safety--security)
-  - [Utilities](#utilities)
+  - [Prototyping & Enhancement Tools](#prototyping--enhancement-tools)
 - [🚀 Infrastructure & Deployment](#-infrastructure--deployment)
   - [Local Development & Serving](#local-development--serving)
   - [Production Serving](#production-serving)
-  - [Inference Platforms](#inference-platforms)
+  - [Cloud Inference Platforms](#cloud-inference-platforms)
 - [🤝 Contributing](#-contributing)
 - [📄 License](#-license)
 
@@ -63,6 +62,8 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [Haystack](https://github.com/deepset-ai/haystack?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | End-to-end NLP framework for production | Python | Apache-2.0 | 
 | [DSPy](https://github.com/stanfordnlp/dspy?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | Framework for algorithmically optimizing LM prompts | Python | MIT |
 | [Semantic Kernel](https://github.com/microsoft/semantic-kernel?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=orchestration) | SDK for integrating AI into conventional programming languages | C#/Python/Java | MIT | 
+| [Langflow](https://github.com/langflow-ai/langflow) | Visual no-code platform for building and deploying LLM workflows | Python/TypeScript | MIT |
+| [Flowise](https://github.com/FlowiseAI/Flowise) | Drag-and-drop UI for creating LLM chains and agents | TypeScript | MIT |
 
 ### PDF Extraction Tools
 
@@ -83,6 +84,8 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [PrivateGPT](https://github.com/imartinez/privateGPT) | Interact with documents using local LLMs | Python | Apache-2.0 | 
 | [AnythingLLM](https://github.com/Mintplex-Labs/anything-llm) | All-in-one AI application for any LLM | JavaScript | MIT |
 | [Quivr](https://github.com/QuivrHQ/quivr) | Your GenAI second brain | Python/TypeScript | Apache-2.0 |
+| [Jina](https://github.com/jina-ai/jina) | Cloud-native neural search framework for multimodal RAG | Python | Apache-2.0 |
+| [txtai](https://github.com/neuml/txtai) | All-in-one embeddings database for semantic search and workflows | Python | Apache-2.0 |
 
 ### Evaluation & Testing
 
@@ -93,6 +96,8 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [Phoenix](https://github.com/Arize-ai/phoenix) | ML observability for LLM, vision, language, and tabular models | Python | Apache-2.0 |
 | [DeepEval](https://github.com/confident-ai/deepeval) | LLM evaluation framework for unit testing LLM outputs | Python | Apache-2.0 |
 | [TruLens](https://github.com/truera/trulens) | Evaluation and tracking for LLM experiments | Python | MIT |
+| [Inspect](https://github.com/ukaisi/inspect) | Framework for large language model evaluations | Python | Apache-2.0 |
+| [UpTrain](https://github.com/uptrain-ai/uptrain) | Open-source tool to evaluate and improve LLM applications | Python | Apache-2.0 |
 
 ### Model Management
 
@@ -102,6 +107,8 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [MLflow](https://github.com/mlflow/mlflow?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=model-management) | Platform for ML lifecycle management | Python | Apache-2.0 |
 | [Weights & Biases](https://github.com/wandb/wandb?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=model-management) | Developer tools for ML | Python | MIT |
 | [DVC](https://github.com/iterative/dvc?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=model-management) | Data version control for ML projects | Python | Apache-2.0 |
+| [Comet ML](https://github.com/comet-ml/comet-ml) | Experiment tracking and visualization for ML/LLM workflows | Python | MIT |
+| [ClearML](https://github.com/allegroai/clearml) | End-to-end MLOps platform with LLM support | Python | Apache-2.0 |
 
 ### Data Collection & Web Scraping
 
@@ -126,6 +133,11 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [Swarm](https://github.com/openai/swarm?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=agent-frameworks) | Educational framework for exploring ergonomic, lightweight multi-agent orchestration | Python | MIT | 
 | [Agency Swarm](https://github.com/VRSEN/agency-swarm) | An open-source agent framework designed to automate your workflows | Python | MIT | 
 | [Multi-Agent Systems](https://github.com/microsoft/multi-agent-systems) | Research into multi-agent systems and applications | Python | MIT | 
+| [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT) | Autonomous AI agent for task execution using GPT models | Python | MIT |
+| [BabyAGI](https://github.com/yoheinakajima/babyagi) | Task-driven autonomous agent inspired by AGI | Python | MIT |
+| [SuperAGI](https://github.com/TransformerOptimus/SuperAGI) | Infrastructure for building and managing autonomous agents | Python | MIT |
+| [Phidata](https://github.com/phidatahq/phidata) | Build AI agents with memory, tools, and knowledge | Python | MIT |
+| [MemGPT](https://github.com/cpacker/MemGPT) | Self-improving agents with infinite context via memory management | Python | MIT |
 
 ## 📦 LLM Development & Optimization
 
@@ -149,6 +161,8 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [xTuring](https://github.com/stochasticai/xTuring?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-training) | Fast fine-tuning of open-source LLMs | Python | Apache-2.0 |
 | [RL4LMs](https://github.com/allenai/RL4LMs?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-training) | RL library to fine-tune LMs to human preferences | Python | Apache-2.0 |
 | [torchtune](https://github.com/pytorch/torchtune?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-training) | PyTorch-native library for fine-tuning LLMs | Python | BSD-3 |
+| [Accelerate](https://github.com/huggingface/accelerate) | Library to easily train on multiple GPUs/TPUs with mixed precision | Python | Apache-2.0 |
+| [BitsandBytes](https://github.com/TimDettmers/bitsandbytes) | 8-bit optimizers and quantization for efficient LLM training | Python | MIT |
 
 ### LLM Inference
 
@@ -174,7 +188,7 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [Garak](https://github.com/leondz/garak?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | LLM vulnerability scanner | Python | MIT |
 | [DeepTeam](https://github.com/DeepTeamAI/deepteam?utm_source=ai-engineering-toolkit&utm_medium=github&utm_campaign=llm-safety) | LLM red teaming framework | Python | Apache-2.0 |
 
-### LLM Utilities
+### Prototyping & Enhancement Tools
 
 | Tool | Description | Language | License |
 |------|-------------|----------|---------|
@@ -182,6 +196,7 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [LLM Reasoners](https://github.com/maitrix-org/llm-reasoners) | Library for advanced large language model reasoning | Python | - |
 | [EasyEdit](https://github.com/zjunlp/EasyEdit) | Easy-to-use knowledge editing framework for LLMs | Python | Apache-2.0 |
 | [CodeTF](https://github.com/salesforce/CodeTF) | One-stop Transformer Library for state-of-the-art Code LLM | Python | Apache-2.0 |
+[Reflex](https://github.com/reflex-dev/reflex) | Python framework for building full-stack web apps for LLM interfaces and dashboards | Python | Apache-2.0 |
 | [spacy-llm](https://github.com/explosion/spacy-llm) | Integrates LLMs into spaCy for prototyping, prompting, and structured NLP outputs | Python | MIT |
 | [pandas-ai](https://github.com/Sinaptik-AI/pandas-ai) | Chat with your database (SQL, CSV, pandas, polars, MongoDB, NoSQL, etc.) | Python | MIT |
 | [LLM Transparency Tool](https://github.com/facebookresearch/llm-transparency-tool) | Interactive toolkit for analyzing internal workings of Transformer-based LMs | Python | - |
@@ -191,6 +206,8 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [LLMSanitize](https://github.com/ntunlp/LLMSanitize) | Contamination detection in NLP datasets and LLMs | Python | - |
 | [Annotateai](https://github.com/neuml/annotateai) | Automatically annotate papers using LLMs | Python | - |
 | [LLM Reasoner](https://github.com/harishsg993010/LLM-Reasoner) | Makes any LLM think like OpenAI o1 and DeepSeek R1 | Python | - |
+| [Guidance](https://github.com/guidance-ai/guidance) | Guidance language for controlling large language models | Python | MIT |
+| [Gradio](https://github.com/gradio-app/gradio) | Quickly create UIs for LLM demos and prototypes | Python | Apache-2.0 |
 
 ## 🚀 Infrastructure & Deployment
 
@@ -211,8 +228,10 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) | TensorRT toolbox for optimized LLM inference | Python/C++ | Apache-2.0 |
 | [LMDeploy](https://github.com/InternLM/lmdeploy) | Toolkit for compressing, deploying, and serving LLMs | Python | Apache-2.0 |
 | [Text Generation Inference](https://github.com/huggingface/text-generation-inference) | Large Language Model Text Generation Inference | Rust/Python | Apache-2.0 |
+| [BentoML](https://github.com/bentoml/BentoML) | Framework for serving and deploying ML/LLM models | Python | Apache-2.0 |
+| [Ray Serve](https://github.com/ray-project/ray) | Scalable model serving library built on Ray | Python | Apache-2.0 |
 
-### Inference Platforms
+### Cloud Inference Platforms
 
 | Platform | Description | Pricing | Features |
 |----------|-------------|---------|----------|
@@ -221,6 +240,7 @@ A curated, practical resource for AI engineers building with Large Language Mode
 | [Replicate](https://replicate.com/) | Run open-source models with a cloud API | Pay-per-use | Pre-built models, Custom training |
 | [Together AI](https://www.together.ai/) | Cloud platform for open-source models | Various | Open models, Fine-tuning |
 | [Anyscale](https://www.anyscale.com/) | Ray-based platform for AI applications | Enterprise | Distributed training, Serving |
+| [Google Vertex AI](https://cloud.google.com/vertex-ai) | Managed platform for building, deploying, and scaling AI models | Pay-as-you-go | Model tuning, RAG pipelines, enterprise security |
 
 ## 🤝 Contributing
 
